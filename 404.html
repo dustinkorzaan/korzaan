@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    const isResumeRequest = window.location.pathname.toLowerCase().includes("resume");
+    const destination = isResumeRequest
+      ? "https://korzaan.com/KorzaanDustinResume.pdf"
+      : "https://www.linkedin.com/in/dustin-korzaan/";
+
+    window.location.replace(destination);
+  </script>
+</head>
+<body>
+  <p>Redirecting... If you are not redirected automatically, <a href="https://www.linkedin.com/in/dustin-korzaan/">click here</a>.</p>
+</body>
+</html>
